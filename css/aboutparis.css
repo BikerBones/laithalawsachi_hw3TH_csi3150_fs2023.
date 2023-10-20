@@ -1,0 +1,78 @@
+/* aboutparis.css */
+body {
+  background-image: url("../images/parisnight.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Set text color for the entire page */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Center content vertically */
+}
+
+.big-header {
+  font-size: 3rem; /* Adjust the font size to make it big */
+  color: #fff; /* Set the text color for the header */
+  text-align: left; /* Align the text to the left side to make it flow downwards */
+  margin-top: 20vh; /* Adjust the margin to position it a little higher */
+  transform: translateY(-50%); /* Center the text vertically */
+  margin-left: 10px;
+}
+
+.sentence {
+  font-size: 3rem; /* Adjust the font size for the sentence */
+  margin-top: 10px; /* Adjust the margin to bring the sentence closer to the left */
+}
+
+@media (max-width: 768px) {
+  .big-header {
+    font-size: 2rem; /* Adjust font size for medium-sized screens */
+  }
+  .sentence {
+    font-size: 1rem; /* Adjust font size for the sentence on medium-sized screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .big-header {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+  .sentence {
+    font-size: 0.8rem; /* Adjust font size for the sentence on small screens */
+  }
+}
+
+/* Sidebar styles */
+
+.sidebar {
+  position: absolute;
+  top: 300px; /* Adjust the top position as needed to move it lower */
+  right: 0;
+  width: 30%; /* Adjust the width as needed */
+  color: #ffffff; /* Set text color for the sidebar content */
+}
+
+/* Style for sidebar content */
+.sidebar p {
+  font-size: 1.5rem; /* Adjust the font size for the sidebar content */
+  text-align: center; /* Align the content to the right side */
+  color: white;
+}
+
+.read-more-button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}

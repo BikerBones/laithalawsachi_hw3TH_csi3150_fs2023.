@@ -1,0 +1,98 @@
+/* aboutparis.css */
+
+body {
+  background-image: url("../images/realcity.jpg");
+  background-size: 100% 100%; /* Zoom out the background image while maintaining its current size */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #57dad8; /* Set text color for the entire page */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Center content vertically */
+}
+
+.big-header {
+  font-size: 3rem; /* Adjust the font size to make it big */
+  color: #78ec66; /* Set the text color for the header */
+  text-align: left; /* Align the text to the left side */
+  margin-top: 20vh; /* Adjust the margin to position it a little higher */
+  transform: translateY(-50%); /* Center the text vertically */
+  margin-left: 10px; /* Reduce the left margin to bring the text closer to the left */
+}
+
+.sentence {
+  display: block; /* Display text on separate lines */
+  font-size: 3rem; /* Adjust the font size for the sentence */
+  margin-top: 10px; /* Adjust the margin to control vertical positioning */
+}
+
+/* Additional styling if needed */
+
+/* Media query for medium-sized screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .big-header {
+    font-size: 2rem; /* Adjust font size for medium-sized screens */
+  }
+  .sentence {
+    font-size: 1rem; /* Adjust font size for the sentence on medium-sized screens */
+  }
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  .big-header {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+  .sentence {
+    font-size: 0.8rem; /* Adjust font size for the sentence on small screens */
+  }
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: absolute;
+  top: 300px; /* Adjust the top position as needed to move it lower */
+  right: 0;
+  width: 30%; /* Adjust the width as needed */
+  color: #ffffff; /* Set text color for the sidebar content */
+}
+
+/* Style for sidebar content */
+.sidebar p {
+  font-size: 1.3rem; /* Adjust the font size for the sidebar content */
+  background-color: rgba(128, 128, 128, 0.5);
+  text-align: center; /* Align the content to the right side */
+  color: white;
+  margin-left: 10px;
+}
+
+.read-more-button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+.arrow {
+  text-align: center;
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 110px; /* Adjust the font size to make it bigger */
+}
+.dropdown-arrow {
+  text-decoration: none; /* Remove underlines on the arrow */
+  color: #00ccff; /* Adjust the arrow color as needed */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}

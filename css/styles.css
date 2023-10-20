@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+  background-image: url("../images/eiffel-tower-paris-beautiful-view-1s.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Set text color for the entire page */
+  text-align: center; /* Center-align all text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center content vertically */
+}
+
+.logo {
+  font-size: 3rem; /* Adjust the font size for the logo */
+  margin-bottom: 20px; /* Add some margin below the logo */
+}
+
+header {
+  color: #fff;
+  padding: 2rem;
+}
+
+#blog {
+  color: #333; /* Text color for the main content area */
+}
+
+.blog-post {
+  padding: 2rem;
+  color: #fff; /* Text color for the blog post content */
+  border-radius: 10px;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 2rem; /* Adjust the font size for the header */
+  margin: 0;
+}
+
+h3 {
+  font-size: 5rem; /* Adjust the font size for the main title */
+  color: yellow;
+}
+
+h4 {
+  margin-top: 30px; /* Add some margin to move it down */
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+footer {
+  color: #fff;
+  padding: 1rem;
+}
+/* styles.css */
+
+.logo {
+  max-width: 100px; /* Set the maximum width to make the logo smaller */
+}
+
+@media (max-width: 768px) {
+  /* Adjust styling for medium-sized screens */
+}
+
+@media (max-width: 480px) {
+  /* Adjust styling for small screens */
+}
+
+.small-text {
+  font-size: 1rem; /* Adjust the font size for the small text */
+  color: white; /* Set the text color for the small text */
+  margin: 0; /* Remove any default margin */
+}
+
+.dropdown-arrow {
+  font-size: 2.5rem; /* Adjust the font size for the dropdown arrow */
+  color: yellow; /* Set the text color for the arrow */
+  text-decoration: none; /* Remove underlines for the link */
+  display: block; /* Make it a block element for styling */
+  margin-top: 10px; /* Adjust the margin to position it correctly */
+}

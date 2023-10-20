@@ -1,0 +1,122 @@
+/* stuffparis.css */
+body {
+  background-image: url("../images/River.jpg");
+  background-size: 100% 100%; /* Zoom out the background image while maintaining its current size */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Set text color for the entire page */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Center content vertically */
+}
+
+.big-header {
+  font-size: 3rem; /* Adjust the font size to make it big */
+  color: #fff; /* Set the text color for the header */
+  text-align: center;
+  margin-top: 20vh; /* Adjust the margin to position it a little higher */
+  transform: translateY(-50%); /* Center the text vertically */
+  margin-left: 10px; /* Reduce the left margin to bring the text closer to the left */
+}
+
+.sentence {
+  font-size: 3rem; /* Adjust the font size for the sentence */
+  margin-top: 10px; /* Adjust the margin to bring the sentence closer to the left */
+}
+
+@media (max-width: 768px) {
+  .big-header {
+    font-size: 2rem; /* Adjust font size for medium-sized screens */
+  }
+  .sentence {
+    font-size: 1rem; /* Adjust font size for the sentence on medium-sized screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .big-header {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+  .sentence {
+    font-size: 0.8rem; /* Adjust font size for the sentence on small screens */
+  }
+}
+
+/* Sidebar styles */
+
+/* Style for the "Read More" button */
+
+.centered-button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 20px auto; /* Center the button horizontally */
+  border-radius: 5px;
+  position: absolute;
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.centered-button:hover {
+  background-color: #0056b3;
+}
+
+/* Center the button vertically */
+.centered-button::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* Center-align text content */
+.big-header {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.sentence {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+/* Image container and styles */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.image-text {
+  position: relative;
+  width: 30%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.image-text img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-text p {
+  position: absolute;
+  top: 75%; /* Adjust to vertically center text */
+  left: 50%; /* Adjust to horizontally center text */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center text both vertically and horizontally */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}

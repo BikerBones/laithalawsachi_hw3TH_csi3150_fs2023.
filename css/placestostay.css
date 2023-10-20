@@ -1,0 +1,66 @@
+body {
+  background-image: url("../images/pyramid.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #57dad8;
+  display: flex;
+  flex-direction: row; /* Set to row to arrange circles horizontally */
+  align-items: center; /* Center content vertically */
+  justify-content: space-around; /* Distribute circles evenly */
+  height: 100vh;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.circle h2 {
+  font-size: 30px;
+  color: yellow;
+  margin: 1;
+  padding: 0;
+}
+
+.circle p {
+  max-width: 80%; /* Adjust the maximum width to fit the circle */
+  word-wrap: break-word; /* Allow text to wrap within the circle */
+}
+
+.left-circle {
+  order: 1; /* Position this circle first on the left */
+}
+
+.middle-circle {
+  order: 2; /* Position this circle in the middle */
+}
+
+.right-circle {
+  order: 3; /* Position this circle last on the right */
+}
+.additional-circle {
+  order: 2; /* Position this additional circle between the middle and left circles */
+}
+.arrow {
+  text-align: center;
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 110px; /* Adjust the font size to make it bigger */
+}
+.dropdown-arrow {
+  text-decoration: none; /* Remove underlines on the arrow */
+  color: yellow; /* Adjust the arrow color as needed */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}

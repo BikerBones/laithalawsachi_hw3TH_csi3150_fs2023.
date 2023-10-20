@@ -1,0 +1,65 @@
+/* quotesparis.css */
+body {
+  background-image: url("../images/waterparissssss.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.circle-container {
+  text-align: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #fff; /* Set background color */
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.circle p {
+  font-size: 16px;
+  background-color: rgba(119, 86, 86, 0.7); /* Transparent black background */
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  text-align: center;
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 110px; /* Adjust the font size to make it bigger */
+}
+.dropdown-arrow {
+  text-decoration: none; /* Remove underlines on the arrow */
+  color: rgb(255, 255, 171); /* Adjust the arrow color as needed */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
